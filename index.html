@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yazy Game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Yazy Two-Player Game</h1>
+        <div id="gameArea">
+            <div class="player-section" id="player1">
+                <h2>Player 1</h2>
+                <div class="dice-container" id="player1Dice"></div>
+                <button id="player1Roll">Roll Dice</button>
+                <button id="player1EndTurn" disabled>End Turn</button>
+                <div class="score-section">
+                    <h3>Scores</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Combination</th>
+                                <th>Score</th>
+                            </tr>
+                        </thead>
+                        <tbody id="player1Scores"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="player-section" id="player2">
+                <h2>Player 2</h2>
+                <div class="dice-container" id="player2Dice"></div>
+                <button id="player2Roll" disabled>Roll Dice</button>
+                <button id="player2EndTurn" disabled>End Turn</button>
+                <div class="score-section">
+                    <h3>Scores</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Combination</th>
+                                <th>Score</th>
+                            </tr>
+                        </thead>
+                        <tbody id="player2Scores"></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
